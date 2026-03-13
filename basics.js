@@ -1,4 +1,4 @@
-/*//VARIABLE
+/* //VARIABLE
 var Name = "ragul";
 console.log(Name)
 let age = 27;
@@ -36,7 +36,7 @@ console.log(Student)
 //non-primitive datatype
 let Myarray = ["ragul","sha","indhuja","25","27"] //Array
 console.log(Myarray)
-console.log(Myarray[2])*/
+console.log(Myarray[2])
 let Product = {
     Name:science,
     Age:27,
@@ -46,3 +46,32 @@ console.log(Product.Name) //objects
 //function
 
 
+ */
+/* let number = 70;
+function name (){
+    let name = "ragul"
+    console.log(name);
+}
+name()
+console.log(number)
+{
+    var hello = "sha"
+}
+console.log(hello)
+{
+    let fan = "tata"
+    console.log(fan)
+} */
+let text = "i am fine"
+ function first(){
+    const age = 27
+    console.log(age)
+ }
+   function second(){
+    let mark = 90
+    console.log(mark)
+  }
+  second()
+first()
+console.log(text)
+// operator
