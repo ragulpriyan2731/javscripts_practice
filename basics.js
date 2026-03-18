@@ -82,7 +82,7 @@ let oddNumber = []
 
 let index = 1
 while (index <= 30) {
-     index++
+     
 
 // for (let index = 1; index <= 30; index++) {
     if(index % 2 === 0){
@@ -90,6 +90,7 @@ while (index <= 30) {
     }else{ 
         oddNumber.push(index)
     }
+    index++
 }
 // }
 console.log('EvenNumber:',evenNumber)
@@ -135,3 +136,32 @@ for(i = 1; i<= fact; i++){
 }
 console.log(`Factorial of ${fact} is ${factorial}`);
 
+
+
+// function
+
+ function myName(name){
+   console.log("my name is",name)
+}
+myName("ragul")
+
+let num = function name(name = ragul){
+    console.log("hello")
+}
+console.log(num)
+
+// callback
+
+function fun(){
+    return 5
+}
+console.log(fun()) 
+function time(){
+    console.log("second function2")
+}
+time(fun())
+
+
+
+
+    
