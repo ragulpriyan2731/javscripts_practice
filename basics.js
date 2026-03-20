@@ -1,4 +1,4 @@
-//VARIABLE
+/* //VARIABLE
 var Name = "ragul";
 console.log(Name)
 let age = 27;
@@ -73,7 +73,7 @@ let text = "i am fine"
 first()
 console.log(text)
 // operator
-// arithmetic operator*/
+// arithmetic operator
 
 //1. write even number or odd number
 
@@ -160,8 +160,56 @@ function time(){
     console.log("second function2")
 }
 time(fun())
+ */
+// 1.what's the output?
+// function test() {
+// var a = 10;
+// if (true) {
+// var a = 20;
+// }
+// console.log(a);
+// }
+// test();
 
+// output:20 ..because var is function scope it run outside of the block
+// 2.what's the output?
+// function test() {
+// let a = 10;
+// if (true) {
+// let a = 20;
+// }
+// console.log(a);
+// }
+// output:error,if function call means output is 10 because let block scope it can't run outside of a block
 
+// 3.fix the error
+// console.log(a)
+// let a = 5
+// let a = 5
+// console.log(a)
+// note: "a" is cannot access before the initialization
 
+// 4.
+// function test() {
+// if (true) {
+// let a = 10;
+// console.log(a);
+//     }
+// }
+// test();
+//   fix error and give valid output----inside a function let variable is assigned but it initialized outside of block,we can assign inside a block it will return a value 10.
 
-    
+// 5.
+function outer() {
+let count = 0;
+return function() {
+count++;
+return count;
+}
+}
+
+const fn = outer();
+console.log(fn());
+console.log(fn());
+// find Output?
+
