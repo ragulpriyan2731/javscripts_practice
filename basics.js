@@ -162,41 +162,41 @@ function time(){
 time(fun())
  */
 // 1.what's the output?
-// function test() {
-// var a = 10;
-// if (true) {
-// var a = 20;
-// }
-// console.log(a);
-// }
-// test();
+/* function test() {
+var a = 10;
+if (true) {
+var a = 20;
+}
+console.log(a);
+}
+test();
 
 // output:20 ..because var is function scope it run outside of the block
 // 2.what's the output?
-// function test() {
-// let a = 10;
-// if (true) {
-// let a = 20;
-// }
-// console.log(a);
-// }
-// output:error,if function call means output is 10 because let block scope it can't run outside of a block
+function test() {
+let a = 10;
+if (true) {
+let a = 20;
+}
+console.log(a);
+}
+output:error,if function call means output is 10 because let block scope it can't run outside of a block
 
 // 3.fix the error
 // console.log(a)
 // let a = 5
-// let a = 5
-// console.log(a)
+let a = 5
+console.log(a)
 // note: "a" is cannot access before the initialization
 
 // 4.
-// function test() {
-// if (true) {
-// let a = 10;
-// console.log(a);
-//     }
-// }
-// test();
+function test() {
+if (true) {
+let a = 10;
+console.log(a);
+    }
+}
+test();
 //   fix error and give valid output----inside a function let variable is assigned but it initialized outside of block,we can assign inside a block it will return a value 10.
 
 // 5.
@@ -210,6 +210,120 @@ return count;
 
 const fn = outer();
 console.log(fn());
-console.log(fn());
-// find Output?
+console.log(fn()); */
+// find Output?....it's output is 1,2 because it closure inside a function remember and has access to variable from its outer scope even a outer scope has finished executing
+
+// 6. Write a program to find largest number in the given findLargest(10, 25, 15)
+// const findLargest = [3,5,2,7,4,9]
+// let large = findLargest[0]
+
+// for(let i = 1; i <= findLargest.length; i++){
+//     if(findLargest[i] > large){
+//         large = findLargest[i];
+//     }
+// }
+// console.log(large)
+// 7.Write a program to swap 2 variables without creating third variable.
+
+// let a = 20;
+// let b = 15;
+// console.log("Before swap:", 'a =',a ,'b =',b );
+// a = a + b //a is now 35
+// b = a - b // b is now 20 (original value of a)
+// a = a - b // a is now 15 (original value of b)
+// console .log("after swap:",'a =', a ,'b=',b)
+
+// 8.Fix the error in the below program
+
+// var test = function() {
+//   console.log("Hello");
+// }
+// test();
+
+// 9.write a program to create function with default parameters the return some value.
+
+// function text(name = 'ragul',age = 27){
+//     return `${name},${age}`;
+// }
+// console.log(text()) output:ragul,27
+
+// 10. find output of the given program
+// let a = 1;
+
+// function outer() {
+// let b = 2;
+// function inner() {
+// let c = 3;
+// console.log(a + b + c);
+// }
+// inner();
+// }
+// outer(); //output:6
+
+// 11. Find output 
+// let a = 10;
+
+// function test() {
+// let a = 20;
+// console.log(a);
+// }
+
+// test(); //output:20
+
+// 12.write a program to Create Calculator Function (example calculate(5,2,”+”)=7) likewise it should work for +, -, *, /
+
+// function calCulate(number1,number2,operator){
+//     switch (operator){
+//         case '+':
+//             return number1 + number2; 
+//         case '-':
+//             return number1 - number2; 
+//         case '*':
+//             return number1 * number2; 
+//        case '/':
+//            if(number2 === 0){
+//             return "Error: division by zero is not allowed.";
+//            }
+//            return number1 / number2;
+//            default:
+//             return "ERROR: INVALID OPERATOR PROVIDED.";
+//      }
+// }
+// const result = calCulate(5,2, '+')
+// console.log(`5 + 2 = ${result}`);
+// const result1 = calCulate(5,2, '-')
+// console.log(`5 - 2 = ${result}`);
+// const result2 = calCulate(5,2, '*')
+// console.log(`5 * 2 = ${result}`);
+// const result3 = calCulate(5,2, '/')
+// console.log(`5 / 2 = ${result}`);
+
+// // 13. say true or false 
+// console.log(null == undefined); //? output:True ,typeof is object
+// console.log(null === undefined); //? output:false it follow strict rule ,typeof is undefined
+
+// 14.Give me output?
+// let a = 5;
+// console.log(a++); // ? output:5,printfirst than increment next 6
+// console.log(++a); // ? output:7,increment first than print 7
+
+// 15. Write a program to check number is positive or negative.
+
+// const value = 6;
+// console.log(value > 0 ? "positive number": value < 0 ? "negative number": "zero");
+
+// 16. var vs const vs let difference and explain
+
+// scope:
+// var:function and global scope
+// let and const:block scope (curly braces {})
+// reassignment & redeclaration:
+// var: both allowed
+// let:reassignmrnt allowed,but not redeclaration within a same scope
+// const:neither allowed
+// hoisting:
+// var:hoisted and initialized with 'undefined'
+// let/const:hoisted but not initialized,resulting in a temporal dead zone (tdz)
+
+// 17. Write program on Fibonacci Series
 
