@@ -327,3 +327,66 @@ console.log(fn()); */
 
 // 17. Write program on Fibonacci Series
 
+
+
+
+
+
+
+// Arrays
+
+/* let lists = ["australia","newzealand","finland","luxemberg","switzerland","iceland","germany","brazil","ireland"]
+// push
+lists.push("netherland")
+console.log(lists)
+// pop
+lists.pop("netherland")
+console.log(lists)
+// unshift
+lists.unshift("singapore")
+console.log(lists)
+// shift
+lists.shift("singapore")
+console.log(lists) */
+// map
+/* let numbers = [4,6,8,3,2,6];
+const filArr = numbers.map(num => num * 2);
+console.log(filArr); */
+// filter
+let numb = [2,3,4,5,6,7,8,9];
+const after = numb.filter(arr => arr > 3)
+console.log(after)
+// reduce
+const sum =[3,4,5]
+const total = sum.reduce((Acc, x)=> Acc + x);
+console.log(total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
