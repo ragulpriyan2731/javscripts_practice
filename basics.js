@@ -353,13 +353,46 @@ console.log(lists) */
 const filArr = numbers.map(num => num * 2);
 console.log(filArr); */
 // filter
-let numb = [2,3,4,5,6,7,8,9];
+/* let numb = [2,3,4,5,6,7,8,9];
 const after = numb.filter(arr => arr > 3)
 console.log(after)
 // reduce
 const sum =[3,4,5]
 const total = sum.reduce((Acc, x)=> Acc + x);
 console.log(total)
+ */
+
+// objects
+
+let change = {
+    name: "ragul",
+    age: 27,
+    ["is name"]: true 
+}
+ console.log(change.name) 
+
+change["department"]= "computer"
+change.num = 637466
+change.use = "rate"
+console.log(change)
+delete change["use"]
+console.log(change) */
+
+// dynamically accessible
+
+const samevalue = "name"
+
+console.log(change[samevalue])
+
+// dynamically access property key
+
+const movie = prompt ("enter your favourite movie:" )
+const fav = {
+    [movie]: "Movie"
+}
+console.log(fav)
+
+
 
 
 
