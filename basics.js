@@ -364,7 +364,7 @@ console.log(total)
 
 // objects
 
-let change = {
+/* let change = {
     name: "ragul",
     age: 27,
     ["is name"]: true 
@@ -376,7 +376,7 @@ change.num = 637466
 change.use = "rate"
 console.log(change)
 delete change["use"]
-console.log(change) */
+console.log(change) 
 
 // dynamically accessible
 
@@ -390,7 +390,62 @@ const movie = prompt ("enter your favourite movie:" )
 const fav = {
     [movie]: "Movie"
 }
-console.log(fav)
+console.log(fav) */
+
+// constructor objects
+
+function Flim (name,year){
+    this.mname = name
+    this.myear = year
+}
+ const movie = new Flim("terminator",1998)
+ console.log(movie)
+
+//  objects()
+// const movieName = new object()
+// actor.name = "bratt pitt"
+// actor.movie = "seven"
+// console.log(movieName)
+
+// factory
+
+function bestActor(name,movie){
+    return{
+        name,
+        movie
+    }
+}
+const create = bestActor("chris evens" , "tomarrow war")
+console.log(create)
+
+// desructuring
+// basic assignment
+const social = {name: "ragul",age: 27,isparsing: true}
+const  {name,age}=social
+console.log(name)
+console.log(age)
+// assigning to new variable name
+// const letters ={i:"inthuja",r:"ragul"}
+// const {i: 25, r: 27}= letters
+// console.log(i)
+
+// default values
+
+const inter = {country: "australia"}
+const {country, continent = "australia"}=inter
+console.log(continent)
+
+// nested destructuring
+
+const member ={
+    id: 7,
+    name: {
+        age: 27,
+        gender: "male"
+    }
+}
+const {name: {gender}}= member
+console.log(gender);
 
 
 
