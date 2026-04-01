@@ -394,12 +394,12 @@ console.log(fav) */
 
 // constructor objects
 
-function Flim (name,year){
+/* function Flim (name,year){
     this.mname = name
     this.myear = year
 }
  const movie = new Flim("terminator",1998)
- console.log(movie)
+ console.log(movie) */
 
 //  objects()
 // const movieName = new object()
@@ -409,21 +409,21 @@ function Flim (name,year){
 
 // factory
 
-function bestActor(name,movie){
+/* function bestActor(name,movie){
     return{
         name,
         movie
     }
 }
 const create = bestActor("chris evens" , "tomarrow war")
-console.log(create)
+console.log(create) */
 
 // desructuring
 // basic assignment
-const social = {name: "ragul",age: 27,isparsing: true}
+/* const social = {name: "ragul",age: 27,isparsing: true}
 const  {name,age}=social
 console.log(name)
-console.log(age)
+console.log(age) */
 // assigning to new variable name
 // const letters ={i:"inthuja",r:"ragul"}
 // const {i: 25, r: 27}= letters
@@ -431,13 +431,13 @@ console.log(age)
 
 // default values
 
-const inter = {country: "australia"}
+/* const inter = {country: "australia"}
 const {country, continent = "australia"}=inter
-console.log(continent)
+console.log(continent) */
 
 // nested destructuring
 
-const member ={
+/* const member ={
     id: 7,
     name: {
         age: 27,
@@ -445,7 +445,70 @@ const member ={
     }
 }
 const {name: {gender}}= member
-console.log(gender);
+console.log(gender); */
+
+// array practice problem
+// 1.	Find Even Numbers and Return all even numbers from an array.
+// for each method
+
+// const numbers = [5,8,9,12,15,17,19,20,21,22,25]
+// const evenNumbers = []
+// numbers.forEach(num => {
+// if (num % 2 === 0){
+//     evenNumbers.push(num)
+// }
+// });
+// console.log(evenNumbers)
+// filter method
+
+// const numbers = [5,8,9,12,15,17,19,20,21,22,25]
+// const evenNumbers = numbers.filter(num => num % 2 ===0)
+// console.log(evenNumbers)
+// 2.	Find sum of all elements using array
+
+// const total = [3,5,6,7,8]
+// const resul = total.reduce((accumulator,currentvalue) => accumulator + currentvalue,0)
+// console.log(resul)
+// 3.	Find Maximum Number in an array
+
+// const heighestValue = [33,45,21,46,77,18,88,78,43]
+// const enormousValue = Math.max(...heighestValue)
+// console.log(enormousValue)
+// 4.	Remove Duplicates in an array
+
+// const val = [2,3,3,4,4,5,6,7,8,8,9]
+// const uniqueValue = [...new Set(val)]
+// console.log(uniqueValue)
+// 5.	Reverse Array
+// const rev = [9,8,7,6,5,4,3,2,1]
+// rev.reverse()
+// const results = rev.toReversed()
+// console.log(rev)
+
+// 6.	Flatten Array
+// const flexie = [2,3,4,[3,4,5],4,8,[3,4,5,[5,7,8]],8,9]
+// const flatted =flexie.flat(Infinity)
+// console.log(flatted)
+// 7.	Find First Matching Element?
+// 8.	Count how many times each element appears
+// const vegetables = ['carrot','tomato','bottleguard','drumstick','brinjal','tomato','carrot','potato','carrot']
+// const countTimes ='carrot'
+// const count =vegetables.filter(vegetable => vegetable === countTimes).length
+// console.log(`The element "${countTimes}" appears ${count} times.`)
+// 9.	Write a program to Merge 2 arrays and also Merge arrays using arrays methods
+// let mer = [1,2,3,4,5,6,]
+// let mer2 = [7,8,9,10]
+// const finalMer =mer.concat(mer2)
+// console.log(finalMer)
+// 10.	Write a program to Find Second Largest Numbers
+// 11.	Check All Elements Condition in an array
+
+
+
+
+
+
+
 
 
 
