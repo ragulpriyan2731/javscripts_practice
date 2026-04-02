@@ -490,6 +490,9 @@ console.log(gender); */
 // const flatted =flexie.flat(Infinity)
 // console.log(flatted)
 // 7.	Find First Matching Element?
+// const first =[5,6,7,8,8,9,10,12]
+// const mat =first.find(element => element > 2)
+// console.log(mat)
 // 8.	Count how many times each element appears
 // const vegetables = ['carrot','tomato','bottleguard','drumstick','brinjal','tomato','carrot','potato','carrot']
 // const countTimes ='carrot'
@@ -502,6 +505,38 @@ console.log(gender); */
 // console.log(finalMer)
 // 10.	Write a program to Find Second Largest Numbers
 // 11.	Check All Elements Condition in an array
+// const elemet = [5,10,12,14,17,19,20]
+// const found =elemet.every(num => num >  0)
+// console.log(found)
+// 12.	Check Some Elements Condition in an array
+// const som =[1,2,3,4,5,6,7]
+// const con = som.some(ran => ran % 2 === 0)
+// console.log(con)
+// 13.	Convert Array to String
+// const strn = ['ragul','priyan']
+// const jon = strn.join(" ")
+// console.log(jon)
+// 14.	Remove Element using splice
+// const names = ['ragul','priyan','inthuja','mark','tim','cook']
+//  const rem = names.splice(3,1)
+//  console.log(rem)
+// 15.	Find longest word in array
+// const larged = ['sam','bejamin','david','smith','jack','whiteman']
+// const lon = larged.reduce((a,b) => (a.length >= b.length ? a:b))
+// console.log(lon)
+// 16.	Write a program to Add a priority item at beginning
+// const priority = ['task1','task2','task3']
+// const task = 'task4'
+// const begin =priority.unshift(task)
+// console.log(priority)
+// 17.	Create a array of nested object and Get users above age 18 which is in the nested object
+
+
+
+
+
+
+
 
 
 
