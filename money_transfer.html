@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account balance</title>
+</head>
+<body> 
+    <button onclick="console.log(`accountBalance:${accountBalance}`)"
+        >moneny</button>
+    <button onclick="accountBalance++;
+        console.log(`accountBalance: ${accountBalance}`)"
+             >amount increment</button>
+    <button onclick="accountBalance+=50;
+        console.log(`accountBalance: ${accountBalance}`)">+50</button>
+     <button onclick="accountBalance+=100;
+        console.log(`accountBalance: ${accountBalance}`)">+100</button>
+             <button onclick="accountBalance+=500;
+        console.log(`accountBalance: ${accountBalance}`)">+500</button>
+    <button onclick="accountBalance=0;
+        console.log(`Account reset.`);
+        console.log(`accountBalance: ${accountBalance}`)">reset to zero</button>
+
+   
+ <script>
+        let accountBalance = 0
+ </script>
+    
+</body>
+</html>
