@@ -530,8 +530,59 @@ console.log(gender); */
 // const begin =priority.unshift(task)
 // console.log(priority)
 // 17.	Create a array of nested object and Get users above age 18 which is in the nested object
-
-
+/* const data = [
+    {
+        category:"AA",
+        users:[
+            {name:"ragul",age:27},
+            {name:"inthuja",age:25}
+        ]
+    },
+    {
+        category:"BB",
+        users:[
+            {name:"priya",age:29},
+            {name:"kumar",age:20}
+        ]
+    }
+]
+const above = data.flatMap(group => group.users.filter(user => user.age >21))
+console.log(above) */
+// 18.	Consider you have a product in that product Check if any product is out of stock using array
+// const products = [
+//     {name:"laptop",stock:70},
+//     {name:"mobile",stock:0},
+//     {name:"tablet",stock:50},
+//     {name:"computer",stock:0}
+// ]
+// const outOfStock = products.filter(sold => sold.stock === 0 )
+// console.log(outOfStock)
+// 19.	Write program to Check if all students passed
+// const studentsResult = [
+//     {id:2,score:45},
+//     {id:3,score:50},
+//     {id:4,score:48},
+//     {id:5,score:55},
+//     {id:6,score:75}
+// ]
+// const allPassed = studentsResult.every(student => student.score > 40)
+// console.log(allPassed)
+// 20.	Find first expensive product
+// const expensive = [
+//     {name:"television",price:4000},
+//     {name:"refrigerator",price:6000},
+//     {name:"washingmachine",price:7000},
+//     {name:"mix",price:4500}
+// ]
+// const expensiveProduct = expensive.reduce((max,product) => product.price > max.price ? product.max)
+// 21.	Find last element in an array
+// const lastArr = [30,34,23,44,55,66]
+// const finLast =lastArr.at(-1)
+// console.log(finLast)
+// 22.	Remove and add element in an array
+// let elemet = [2,3,4,5,6,7,8,9]
+// const addRemove = elemet.splice(3,1,10)
+// console.log(addRemove)
 
 
 
